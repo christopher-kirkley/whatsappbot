@@ -1,4 +1,5 @@
-FROM tiangolo/uwsgi-nginx:python3.8-alpine
-RUN apk --update add bash nano vim
+FROM tiangolo/uwsgi-nginx-flask:python3.6-alpine3.7
+RUN apk --update add bash nano
 COPY ./requirements.txt /var/www/requirements.txt
 RUN pip install -r /var/www/requirements.txt
+
