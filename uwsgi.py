@@ -1,4 +1,4 @@
 [uwsgi]
-module = mail
+module = main
 callable = app
 master = true
