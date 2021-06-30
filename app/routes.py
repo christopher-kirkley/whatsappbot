@@ -24,3 +24,6 @@ def bot():
         responded = True
     return str(resp)
 
+@app.route('/', methods=['GET'])
+def home():
+    return 'Testing'
